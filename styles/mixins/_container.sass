@@ -1,0 +1,21 @@
+@import layout/make-responsive
+// .group, .container
+// 	@extend %make-adaptive
+// 	:box-sizing border-box
+// 	:position relative
+// 	+display-for(xl lg md sm)
+// 		:margin 0 auto
+// 	+display-for(xs)
+// 		:margin 0
+// 		:padding 0 12px	
+=container 
+	@extend %make-adaptive
+	:box-sizing border-box
+	:position relative
+	+display-for(xl lg md sm)
+		:margin 0 auto
+	+display-for(xs)
+		:margin 0
+		:padding 0 12px	
+.group, .container
+	+container	

@@ -1,7 +1,7 @@
 {
   "name": "001",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.0"
@@ -18,5 +18,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrdnndtsch/upatfive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jrdnndtsch/upatfive/issues"
+  },
+  "homepage": "https://github.com/jrdnndtsch/upatfive"
 }

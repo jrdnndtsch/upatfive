@@ -1,6 +1,7 @@
 @import make-responsive
 @import grid
-
+@import make-adaptive
+@import col-gutter
 .col
 	&-half
 		+make-column(6)
@@ -40,11 +41,6 @@
 	:background palegoldenrod
 	&:nth-child(2n)
 		:background lime
-.col-half
-	:background violet
-	&:nth-child(3n)
-		:background pink
-	&:nth-child(3n+2)
-		:background yellow	
+
 
 
