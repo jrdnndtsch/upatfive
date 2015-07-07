@@ -1,20 +1,20 @@
 <?php /* Template Name: Home */ ?>
 <?php get_header(); ?>
-
+<div id="home">
 	<header class="home__header">
 		<p>this is where the animated logo will go...</p>
 	</header>
 
 	<div class="home__what-we-do">
-		<h2>What We Do</h2>
 		<div class="container">
+			<h2>What We Do</h2>
 			<div class="row">
-				<div class="col-half home__web">
+				<div class="col--half home__web">
 					<img src="" alt="">
 					<h4>Website Development</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae repellat optio dolorum non, nihil ab facilis, voluptas ducimus nemo obcaecati earum! Ratione quasi modi laborum blanditiis, dolorem et unde animi.</p>
 				</div>
-				<div class="col-half home__app">
+				<div class="col--half home__app">
 					<img src="" alt="">
 					<h4>Web Applications</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias distinctio illum consectetur vero dignissimos id itaque, repudiandae repellendus dolore quo, labore minima facere cupiditate.</p>
@@ -71,5 +71,6 @@
 			</div>
 		</div>
 	</div>
+</div>	
 
 <?php get_footer(); ?>
