@@ -2,22 +2,20 @@
 <?php get_header(); ?>
 <div id="home">
 	<header class="home__header">
-		<p>this is where the animated logo will go...</p>
+		<div class="container">
+			<h2 class= "header__title">we are awake earlier than you</h2>
+		</div>
 	</header>
 
-	<div class="home__what-we-do">
+	<div class="home__what-we-do home__content-block">
 		<div class="container">
-			<h2>What We Do</h2>
+			<h3>What We Do</h3>
 			<div class="row">
-				<div class="col--half home__web">
-					<img src="" alt="">
-					<h4>Website Development</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae repellat optio dolorum non, nihil ab facilis, voluptas ducimus nemo obcaecati earum! Ratione quasi modi laborum blanditiis, dolorem et unde animi.</p>
+				<div class="col-half home__web">
+					<p class= "attn">We build web based sites and applications</p>
 				</div>
-				<div class="col--half home__app">
-					<img src="" alt="">
-					<h4>Web Applications</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias distinctio illum consectetur vero dignissimos id itaque, repudiandae repellendus dolore quo, labore minima facere cupiditate.</p>
+				<div class="col-half home__app">
+					<p class="contain">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias distinctio illum consectetur vero dignissimos id itaque, repudiandae repellendus dolore quo, labore minima facere cupiditate.</p>
 				</div>
 			</div>	
 		</div>
@@ -29,7 +27,10 @@
 		<div class="home__work">
 			<div class="row">
 				<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' ); ?>
-				<div class="col-half home__image" style="background: url(<?php echo $src[0] ?>)">	
+				<div class="col-half home__image-container">
+					<div class="home__image" style="background: url(<?php echo $src[0] ?>); background-size: cover; background-repeat: no-repeat; background-position: center;">
+					</div>	
+					<div class="home--image-overlay" style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/img/subtle-dots.png')"></div>
 				</div>
 				<div class="col-half home__content">
 					<div class="contain-content--right">
@@ -53,20 +54,25 @@
 					<p><?php echo get_the_excerpt(); ?></p>
 				</div>
 			</div>
-			<div class="col-half home__image" style="background: url(<?php echo $src[0] ?>)"></div>	
+			<div class="col-half home__image-container">
+				<div class="home__image" style="background: url(<?php echo $src[0] ?>); background-size: cover; background-repeat: no-repeat; background-position: center;">
+				</div>	
+				<div class="home--image-overlay" style="background-image: url('<?php bloginfo('template_directory'); ?>/assets/img/subtle-dots.png')"></div>
+			</div>
 			</div>
 		</div>
 	<?php endwhile ?>
 	
-	<div class="home__contact">
+	<div class="home__contact home__content-block">
 		<div class="container">
-			<h2>Get In Touch</h2>
+			<h3>Get In Touch</h3>
 			<div class="row">
 				<div class="col-half">
-					<p class="attn">We love to work with new poeple. Sometimes we are friendly, so if you like sometimes friendly people maybe we can work together</p>
+					<p class="attn">We would love to work together</p>
 				</div>
 				<div class="col-half">
-					<p>Let us know about what your project is and then we will chat about it and figure out some more stuff. Then we can start working on it and it will be swell.</p>
+					<p class="contain">Let us know about what your project is and then we will chat about it and figure out some more stuff. Then we can start working on it and it will be swell.</p>
+					<button class="button">Contact Us</button>
 				</div>
 			</div>
 		</div>

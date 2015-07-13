@@ -20,12 +20,12 @@
 		+contain-col
 		:float right
 		:padding-right 50px	
-		+display-for(sm)
+		+display-for(sm xs)
 			:max-width 1000px
+			:padding-right 0
+			:float none
 			+make-column(12)
-		+display-for(xs)
-			:max-width 1000px
-			+make-column(12)
+			+container
 	&--right
 		:line-height 28px
 		+contain-col
@@ -33,7 +33,7 @@
 		+display-for(sm xs)
 			:padding-left 0
 			:max-width 1000px
-			+container
 			+make-column(12)
+			+container
 
 
